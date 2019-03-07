@@ -40,25 +40,25 @@ class FlightForm extends React.Component {
         <Form.Item label="Harness Length">
           {getFieldDecorator("harness_length", {
             rules: this.rules
-          })(<InputNumber min={1} max={10} />)}
+          })(<InputNumber />)}
         </Form.Item>
 
         <Form.Item label="Gross Weight">
           {getFieldDecorator("gross_weight", {
             rules: this.rules
-          })(<InputNumber min={1} max={10} />)}
+          })(<InputNumber />)}
         </Form.Item>
 
         <Form.Item label="Atmospheric Pressure">
           {getFieldDecorator("atmospheric_pressure", {
             rules: this.rules
-          })(<InputNumber min={1} max={10} />)}
+          })(<InputNumber />)}
         </Form.Item>
 
         <Form.Item label="Room Temperature">
           {getFieldDecorator("room_temperature", {
             rules: this.rules
-          })(<InputNumber min={1} max={10} />)}
+          })(<InputNumber />)}
         </Form.Item>
 
         <Form.Item label="Airport">
@@ -74,31 +74,31 @@ class FlightForm extends React.Component {
         <Form.Item label="Fuel Capacity on Left Wing">
           {getFieldDecorator("left_wing_fuel_capacity", {
             rules: this.rules
-          })(<InputNumber min={1} max={10} />)}
+          })(<InputNumber />)}
         </Form.Item>
 
         <Form.Item label="Fuel Capacity on Right Wing">
           {getFieldDecorator("right_wing_fuel_capacity", {
             rules: this.rules
-          })(<InputNumber min={1} max={10} />)}
+          })(<InputNumber />)}
         </Form.Item>
 
         <Form.Item label="Fuel Quantity on Left Wing">
           {getFieldDecorator("left_wing_fuel_quantity", {
             rules: this.rules
-          })(<InputNumber min={1} max={10} />)}
+          })(<InputNumber />)}
         </Form.Item>
 
         <Form.Item label="Fuel Quantity on Right Wing">
           {getFieldDecorator("right_wing_fuel_quantity", {
             rules: this.rules
-          })(<InputNumber min={1} max={10} />)}
+          })(<InputNumber />)}
         </Form.Item>
 
         <Form.Item label="Maximum Altitude to be reached">
           {getFieldDecorator("max_altitude", {
             rules: this.rules
-          })(<InputNumber min={1} max={10} />)}
+          })(<InputNumber />)}
         </Form.Item>
 
         <Form.Item label="Flight Number">

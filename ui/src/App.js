@@ -26,7 +26,7 @@ const App = () => {
                 <Link to="/add">Add Flight</Link>
               </Menu.Item>
               <Menu.Item key="3">
-                <Link to="/flights">All Flights</Link>
+                <Link to="/flights">Search & Filter</Link>
               </Menu.Item>
             </Menu>
           </Header>

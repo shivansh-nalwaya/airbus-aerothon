@@ -15,4 +15,4 @@ export { default as Rate } from "antd/lib/rate";
 export { default as Checkbox } from "antd/lib/checkbox";
 export { default as Button } from "antd/lib/button";
 export { default as Menu } from "antd/lib/menu";
-export { default as Breadcrumb } from "antd/lib/breadcrumb";
+export { default as Table } from "antd/lib/table";
