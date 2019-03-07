@@ -2,6 +2,7 @@ import React from "react";
 import Home from "./routes/Home";
 import AddFlight from "./routes/AddFlight";
 import FlightTable from "./routes/FlightTable";
+import ShowFlight from "./routes/ShowFlight";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { Layout, Menu } from "./components/design";
 const { Header } = Layout;
@@ -32,7 +33,8 @@ const App = () => {
           </Header>
           <Route path="/" exact component={Home} />
           <Route path="/add/" component={AddFlight} />
-          <Route path="/flights/" component={FlightTable} />
+          <Route exact path="/flights" component={FlightTable} />
+          <Route path="/flights/:id" component={ShowFlight} />
         </Layout>
       </div>
     </Router>

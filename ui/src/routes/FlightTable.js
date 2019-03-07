@@ -1,5 +1,6 @@
 import React from "react";
-import { Table, Button } from "../components/design";
+import { Link } from "react-router-dom";
+import { Table } from "../components/design";
 import FlightModel from "../models/FlightModel";
 import { extendObservable } from "mobx";
 import { observer } from "mobx-react";
@@ -25,7 +26,8 @@ class FlightTable extends React.Component {
         key: "flight_number",
         dataIndex: "flight_number",
         fixed: "left",
-        width: 100
+        width: 100,
+        render: (text, row) => <Link to={`/flights/${row._id}`}>{text}</Link>
       },
       {
         title: "Harness Length",
