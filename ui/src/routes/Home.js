@@ -23,9 +23,7 @@ class Home extends Component {
           height: "88vh"
         }}
       >
-        <Box>
-          <BoxText>Own the sky.</BoxText>
-        </Box>
+        <BoxText>Own the sky.</BoxText>
       </Content>
     );
   }
