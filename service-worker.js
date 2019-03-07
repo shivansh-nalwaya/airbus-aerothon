@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/airbus-aerothon/precache-manifest.ada40a6abe938a4ce22fc37b357512ce.js"
+  "/airbus-aerothon/precache-manifest.adcc618cbc3b79654bef5e6a8b601269.js"
 );
 
 workbox.clientsClaim();
