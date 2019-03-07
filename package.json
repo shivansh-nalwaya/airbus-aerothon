@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "start": "concurrently \"cd api && node server.js\" \"cd ui && yarn start\"",
-    "build": "concurrently \"cd ui && yarn build\" \"cd api && node server.js\""
+    "build-server": "cd api && yarn install",
+    "build-client": "cd ui && yarn build"
   },
   "dependencies": {
     "concurrently": "^4.1.0"
