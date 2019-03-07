@@ -6,9 +6,11 @@
   "scripts": {
     "start": "concurrently \"cd api && node server.js\" \"cd ui && yarn start\"",
     "build-server": "cd api && yarn install",
-    "build-client": "cd ui && yarn build"
+    "build-client": "cd ui && yarn build",
+    "deploy-client": "gh-pages -d ui/build"
   },
   "dependencies": {
-    "concurrently": "^4.1.0"
+    "concurrently": "^4.1.0",
+    "gh-pages": "^2.0.1"
   }
 }
