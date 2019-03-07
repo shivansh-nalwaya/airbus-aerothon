@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Table } from "../components/design";
+import { Table, Layout } from "../components/design";
 import FlightModel from "../models/FlightModel";
 import { extendObservable } from "mobx";
 import { observer } from "mobx-react";
+
+const Content = Layout.Content;
 
 class FlightTable extends React.Component {
   constructor(props) {
@@ -55,16 +57,6 @@ class FlightTable extends React.Component {
         dataIndex: "airport"
       },
       {
-        title: "Source",
-        key: "source",
-        dataIndex: "source"
-      },
-      {
-        title: "Destination",
-        key: "destination",
-        dataIndex: "destination"
-      },
-      {
         title: "Left Wing Fuel Capacity",
         key: "left_wing_fuel_capacity",
         dataIndex: "left_wing_fuel_capacity"
@@ -98,11 +90,13 @@ class FlightTable extends React.Component {
 
   render() {
     return (
-      <Table
-        columns={this.columns}
-        dataSource={this.data}
-        scroll={{ x: 2200 }}
-      />
+      <Content>
+        <Table
+          columns={this.columns}
+          dataSource={this.data}
+          scroll={{ x: 2200 }}
+        />
+      </Content>
     );
   }
 }
