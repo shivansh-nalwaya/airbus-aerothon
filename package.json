@@ -1,0 +1,13 @@
+{
+  "name": "todo_app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "concurrently \"cd api && node server.js\" \"cd ui && yarn start\"",
+    "build": "concurrently \"cd ui && yarn build\" \"cd api && node server.js\""
+  },
+  "dependencies": {
+    "concurrently": "^4.1.0"
+  }
+}
