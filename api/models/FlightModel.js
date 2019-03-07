@@ -12,7 +12,7 @@ const flight_schema = new mongoose.Schema({
   left_wing_fuel_capacity: Number,
   right_wing_fuel_capacity: Number,
   left_wing_fuel_quantity: Number,
-  left_wing_fuel_quantity: Number,
+  right_wing_fuel_quantity: Number,
   max_altitude: Number,
   flight_number: String
 });
