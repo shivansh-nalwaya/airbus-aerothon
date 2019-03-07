@@ -18,10 +18,7 @@ module.exports = {
     return Flight.findOneAndUpdate(
       { _id: id },
       {
-        $set: {
-          title: data.title,
-          completed: data.completed
-        }
+        $set: { ...data }
       }
     );
   },
