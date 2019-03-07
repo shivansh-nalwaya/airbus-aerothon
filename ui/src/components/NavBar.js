@@ -37,6 +37,12 @@ export default class NavBar extends React.Component {
                 <HeaderNavItemSpan />
               </NoStyleLink>
             </HeaderNavItem>
+            <HeaderNavItem>
+              <NoStyleLink to="/add">
+                <HeaderNavItemLink>Add Flight</HeaderNavItemLink>
+                <HeaderNavItemSpan />
+              </NoStyleLink>
+            </HeaderNavItem>
           </HeaderNav>
         </HeaderContainer>
       </Header>

@@ -19,7 +19,7 @@ export const HeaderContainer = styled.div`
 export const Logo = styled.div`
   font-size: 30px;
   font-weight: 700;
-  color: #000;
+  color: #ffffff;
   text-transform: uppercase;
 `;
 
@@ -29,7 +29,7 @@ export const HeaderNav = styled.div`
 
 export const HeaderNavItemSpan = styled.div`
   height: 2px;
-  background-color: #0474bc;
+  background-color: #ffffff;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -51,6 +51,7 @@ export const HeaderNavItem = styled.div`
 `;
 
 export const HeaderNavItemLink = styled.div`
-  color: #000;
+  color: #ffffff;
   text-decoration: none;
+  font-size: 1.2em;
 `;

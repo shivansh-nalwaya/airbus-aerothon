@@ -176,7 +176,7 @@ class FlightTable extends React.Component {
     ];
 
     return (
-      <Content>
+      <Content style={{ backgroundColor: "#f2f2f2", height: "88vh" }}>
         <Table columns={columns} dataSource={this.data} scroll={{ x: 2200 }} />
       </Content>
     );

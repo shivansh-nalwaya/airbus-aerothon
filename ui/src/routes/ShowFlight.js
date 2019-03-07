@@ -1,8 +1,10 @@
 import React from "react";
-import { Col, Row } from "../components/design";
+import { Col, Row, Layout } from "../components/design";
 import FlightModel from "../models/FlightModel";
 import { extendObservable } from "mobx";
 import { observer } from "mobx-react";
+
+const Content = Layout.Content;
 
 class FlightTable extends React.Component {
   constructor(props) {
@@ -19,7 +21,7 @@ class FlightTable extends React.Component {
 
   render() {
     return (
-      <div>
+      <Content style={{ backgroundColor: "#f2f2f2", height: "88vh" }}>
         <Row type="flex" justify="space-around">
           <Col span={4}>MSN</Col>
           <Col span={12}>{this.flight.msn}</Col>
@@ -76,7 +78,7 @@ class FlightTable extends React.Component {
           <Col span={4}>Max Altitude</Col>
           <Col span={12}>{this.flight.max_altitude}</Col>
         </Row>
-      </div>
+      </Content>
     );
   }
 }

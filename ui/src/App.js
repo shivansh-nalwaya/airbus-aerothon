@@ -5,11 +5,18 @@ import FlightTable from "./routes/FlightTable";
 import ShowFlight from "./routes/ShowFlight";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Navbar from "./components/NavBar";
+import Background from "./images/background.jpg";
 
 const App = () => {
   return (
     <Router>
-      <div>
+      <div
+        style={{
+          backgroundImage: `url(${Background})`,
+          backgroundSize: "cover",
+          height: "100vh"
+        }}
+      >
         <Navbar />
         <Route path="/" exact component={Home} />
         <Route path="/add/" component={AddFlight} />
