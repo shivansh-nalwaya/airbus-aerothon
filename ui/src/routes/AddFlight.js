@@ -65,7 +65,7 @@ class FlightForm extends React.Component {
           {getFieldDecorator("airport", {
             rules: this.rules
           })(
-            <Select>
+            <Select defaultActiveFirstOption={true}>
               <Option key="bangalore">Bangalore</Option>
             </Select>
           )}

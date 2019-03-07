@@ -36,12 +36,11 @@ module.exports = {
 
   create: function(req, res) {
     var data = req.body;
-    console.log(data);
     FlightRepository.create(data)
       .then(result => {
         res.send({
           success: true,
-          id: result._id
+          result: result
         });
       })
       .catch(message => {

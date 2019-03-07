@@ -13,11 +13,14 @@ export default class BaseModel {
   };
 
   create = data => {
-    console.log(data);
-    // return fetch(`${this.baseApi}/${this.api}`, {
-    //   method: "post",
-    //   body: JSON.stringify(data)
-    // }).then(data => data.json());
+    return fetch(`${this.baseApi}/${this.api}`, {
+      method: "post",
+      mode: "cors",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+    }).then(data => data.json());
   };
 
   delete = id => {
@@ -29,6 +32,10 @@ export default class BaseModel {
   update = (id, data) => {
     return fetch(`${this.baseApi}/${this.api}/${id}`, {
       method: "put",
+      mode: "cors",
+      headers: {
+        "Content-Type": "application/json"
+      },
       body: JSON.stringify(data)
     }).then(data => data.json());
   };
