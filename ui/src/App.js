@@ -9,7 +9,7 @@ import Background from "./images/background.jpg";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename={`/airbus-aerothon`}>
       <div
         style={{
           backgroundImage: `url(${Background})`,

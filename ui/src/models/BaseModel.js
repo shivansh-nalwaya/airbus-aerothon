@@ -1,6 +1,6 @@
 export default class BaseModel {
   constructor(api) {
-    this.baseApi = "http://localhost:3001";
+    this.baseApi = "https://airbus-aerothon19.herokuapp.com";
     this.api = api;
   }
 

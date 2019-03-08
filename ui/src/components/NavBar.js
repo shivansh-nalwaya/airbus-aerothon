@@ -11,7 +11,7 @@ import {
 } from "../styles/NavbarStyles";
 
 const NoStyleLink = props => (
-  <Link to={props.to} style={{ textDecoration: "none" }}>
+  <Link to={`${props.to}`} style={{ textDecoration: "none" }}>
     {props.children}
   </Link>
 );
